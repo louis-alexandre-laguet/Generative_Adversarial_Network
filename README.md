@@ -1,27 +1,27 @@
-# Implémentation de GANs et Variants sur Différents Datasets
+# Implementation of GANs and Variants on Different Datasets
 
-Ce repository contient plusieurs implémentations de Generative Adversarial Networks (GANs) et de leurs variantes. L'objectif de ces exercices est d'explorer les GANs pour la génération d'images, en partant d'un DCGAN simple jusqu'à une version conditionnelle avec WGAN-GP.
+This repository contains several implementations of Generative Adversarial Networks (GANs) and their variants. The objective of these exercises is to explore GANs for image generation, starting from a simple DCGAN to a conditional version with WGAN-GP.
 
-## Contenu du repository
+## Repository Content
 
-### 1. DCGAN sur des images de briques Lego
-**Objectif :**
-- Entraîner un DCGAN (Deep Convolutional GAN) pour générer des images en niveaux de gris de 64×64 pixels représentant des briques Lego.
-- Utilisation d'un discriminateur et d'un générateur convolutionnels.
-- Visualisation de l'évolution des images générées au fil de l'entraîment.
+### 1. DCGAN on Lego Brick Images
+**Objective:**
+- Train a DCGAN (Deep Convolutional GAN) to generate grayscale 64x64 pixel images of Lego bricks.
+- Use convolutional discriminator and generator.
+- Visualize the evolution of generated images throughout the training process.
 
-### 2. WGAN-GP (Wasserstein GAN avec Gradient Penalty)
-**Objectif :**
-- Comprendre les limitations des GANs standards (instabilité, mode collapse) et voir comment le WGAN les corrige.
-- Implémenter un WGAN utilisant la distance de Wasserstein au lieu de la divergence Jensen-Shannon.
-- Appliquer le Gradient Penalty (GP) pour stabiliser l'entraîment en forçant le critique à respecter la condition de Lipschitz.
-- Comparer les performances avec un GAN classique.
+### 2. WGAN-GP (Wasserstein GAN with Gradient Penalty)
+**Objective:**
+- Understand the limitations of standard GANs (instability, mode collapse) and see how WGAN addresses them.
+- Implement a WGAN using the Wasserstein distance instead of the Jensen-Shannon divergence.
+- Apply the Gradient Penalty (GP) to stabilize the training by forcing the critic to satisfy the Lipschitz condition.
+- Compare performance with a standard GAN.
 
-### 3. WGAN-GP Conditionnel sur CelebA
-**Objectif :**
-- Implémenter un GAN conditionnel (Conditional GAN) permettant de générer des images en fonction d'un label.
-- Intégration des labels dans le générateur et le critique pour orienter la génération d'images.
-- Expérimentation avec des attributs de CelebA (ex: cheveux blonds ou non).
-- Analyse de la qualité des images générées en fonction des labels conditionnels.
+### 3. Conditional WGAN-GP on CelebA
+**Objective:**
+- Implement a Conditional GAN to generate images based on a label.
+- Integrate labels into the generator and critic to guide image generation.
+- Experiment with CelebA attributes (e.g., blonde hair or not).
+- Analyze the quality of generated images based on the conditional labels.
 
-Les modèles entraînés sont enregistrés dans le fichier `models.zip`.
+Trained models are saved in the `models.zip` file.
